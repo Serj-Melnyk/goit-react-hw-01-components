@@ -3,7 +3,8 @@ import user from "../components/user.json"
 
 export const App = () => {
 return <div>
-  <Profile username={user.username}
+  <Profile 
+  username={user.username}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
