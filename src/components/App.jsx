@@ -1,3 +1,5 @@
+
+
 import { Profile } from "./Profile/Profile"
 import user from "../components/Profile/user.json"
 
@@ -10,8 +12,11 @@ import friends from "../components/FriendList/friends.json"
 import { TransactionHistory } from "./Transaction/TransactionHistory"
 import transactions from "../components/Transaction/transactions.json"
 
+import { GlobalStyle } from "./GlobalStyle"
+import { Layout } from "./Layout"
 export const App = () => {
-return <div>
+return <Layout>
+<GlobalStyle />
   <Profile 
   username={user.username}
   tag={user.tag}
@@ -27,7 +32,7 @@ return <div>
 
 < TransactionHistory  items = {transactions} />
 
-</div>
+</Layout>
 }
 
 
