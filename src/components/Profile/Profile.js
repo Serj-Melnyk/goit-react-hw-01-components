@@ -3,33 +3,33 @@ import { Card,CardImg,CardDescription,CardUserName,Stats,StatItem,StatLabel,Stat
 
 
 export const Profile = ({username,tag,location,avatar,stats}) => {
-    return <Card class="profile">
-    <div class="description">
+    return <Card className="profile">
+    <div className="description">
       <CardImg
         src={avatar}
         alt={username}
         // width= "120"
-        class="avatar"
+        className="avatar"
       />
       <CardDescription>
-      <CardUserName class="name">{username}</CardUserName>
-      <p class="tag">{tag}</p>
-      <p class="location">{location}</p>
+      <CardUserName className="name">{username}</CardUserName>
+      <p className="tag">{tag}</p>
+      <p className="location">{location}</p>
       </CardDescription>
     </div>
   
-    <Stats class="stats">
+    <Stats className="stats">
       <StatItem>
-        <StatLabel class="label">Followers</StatLabel>
-        <StatValue class="quantity"> {stats.followers}</StatValue>
+        <StatLabel className="label">Followers</StatLabel>
+        <StatValue className="quantity"> {stats.followers}</StatValue>
       </StatItem>
       <StatItem>
-        <StatLabel class="label">Views</StatLabel>
-        <StatValue class="quantity"> {stats.views} </StatValue>
+        <StatLabel className="label">Views</StatLabel>
+        <StatValue className="quantity"> {stats.views} </StatValue>
       </StatItem>
       <StatItem>
-        <StatLabel class="label">Likes</StatLabel>
-        <StatValue class="quantity"> {stats.likes} </StatValue>
+        <StatLabel className="label">Likes</StatLabel>
+        <StatValue className="quantity"> {stats.likes} </StatValue>
       </StatItem>
     </Stats>
   </Card>

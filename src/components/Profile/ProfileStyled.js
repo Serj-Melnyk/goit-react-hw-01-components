@@ -10,7 +10,9 @@ justify-content: space-between;
 align-items: center;
 border: 1px solid #d9e4f1;
 border-radius: 6px;
-box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 
+0px 1px 1px rgb(0 0 0 / 14%), 
+0px 2px 1px rgb(0 0 0 / 20%);
 `;
 
 export const CardImg = styled.img`
