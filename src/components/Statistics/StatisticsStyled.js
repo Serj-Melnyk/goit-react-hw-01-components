@@ -36,23 +36,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;
-color: ${props => {
-   if(props.style === '#fffff') {
-    return 'black'
-   }
-    // console.log(props) 
-    return 'white'}
-};
-
 
 .percentage {
     font-size: 22px;
     font-weight: 600;
 }
 `;
-
-
-
-
-// StatsLabel
-// isWhite = {StatsItem}

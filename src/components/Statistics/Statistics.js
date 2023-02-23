@@ -9,8 +9,10 @@ return (
 <StatsList className="stat-list">
     {stats.map((item) => {
         return (
-        <StatsItem  classNameName="list-item" 
-        style={{backgroundColor: getRandomHexColor()}}
+        <StatsItem  className="list-item" 
+        style={{backgroundColor: getRandomHexColor(),
+            color: getRandomHexColor()}}
+        
     
         key = {item.id}>
         <span className="label">{item.label} </span>

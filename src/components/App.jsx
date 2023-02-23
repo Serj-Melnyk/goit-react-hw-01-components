@@ -9,7 +9,7 @@ import data from "./Statistics/data.json"
 import { Friendlist } from "./FriendList/FriendList"
 import friends from "../components/FriendList/friends.json"
 
-import { TransactionHistory } from "./Transaction/TransactionHistory"
+import {TransactionHistory} from "../components/Transaction/TransactionHistory"
 import transactions from "../components/Transaction/transactions.json"
 
 import { GlobalStyle } from "./GlobalStyle"
@@ -30,7 +30,7 @@ return <Layout>
 
 < Friendlist friends = {friends} />
 
-< TransactionHistory  items = {transactions} />
+<TransactionHistory items={transactions} />;
 
 </Layout>
 }
