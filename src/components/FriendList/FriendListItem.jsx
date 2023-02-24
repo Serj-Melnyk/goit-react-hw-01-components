@@ -1,21 +1,22 @@
 import PropTypes from "prop-types"
-import {FriendCard,FriendOnline,Avatar,FriendName} from "./FriendlistStyled"
+import {FriendCard,FriendOnline,Avatar,FriendName,Li } from "./FriendlistStyled"
 
-export const Friend = ( {friendItem:{avatar,name,isOnline}}) => {
+export const Friend = ({avatar,name,isOnline}) => {
     return (
+      <Li>
     <FriendCard className="item">
-      {/* <BsRecordFill /> */}
+  
       
     <FriendOnline isOnline = {isOnline}> </FriendOnline>
     <Avatar className="avatar" src={avatar} alt={name} width="48" />
     <FriendName className="name">{name}</FriendName>
-  </FriendCard>)
+  </FriendCard>
+  </Li>
+  )
 }
 
 Friend.propTypes = {
-  friendItem: PropTypes.shape({
     avatar: PropTypes.string,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired
-  }).isRequired
 }
